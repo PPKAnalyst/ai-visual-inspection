@@ -3,7 +3,7 @@
 This project explores how computer vision can be applied to real-world manufacturing quality inspection problems using YOLOv8.
 
 
-## 🔍 Problem
+## Problem
 
 Manual inspection on manufacturing shop floors is:
 - time-consuming  
