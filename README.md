@@ -3,12 +3,12 @@
 An end-to-end computer vision project using YOLOv8 to detect surface defects in manufacturing materials.
 
 
-## 🔍 Problem
+## Problem
 Manual inspection on the shop floor is time-consuming and inconsistent. This project explores how AI-based visual inspection can automate defect detection and improve quality control.
 
 
 
-## 💡 Motivation
+## Motivation
 During my co-op, I built a gauge to verify correct Belleville washer assembly orientation. This made me think — can computer vision automate such inspection tasks?
 
 This project is my first step toward applying AI in manufacturing environments.
