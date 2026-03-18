@@ -1,18 +1,27 @@
 # AI Visual Inspection for Manufacturing Defect Detection
 
-An end-to-end computer vision project using YOLOv8 to detect surface defects in manufacturing materials.
+This project explores how computer vision can be applied to real-world manufacturing quality inspection problems using YOLOv8.
 
 
-## Problem
-Manual inspection on the shop floor is time-consuming and inconsistent. This project explores how AI-based visual inspection can automate defect detection and improve quality control.
+## 🔍 Problem
 
+Manual inspection on manufacturing shop floors is:
+- time-consuming  
+- inconsistent  
+- difficult to scale  
+
+Detecting surface defects like cracks, inclusions, or patches requires trained human inspectors and can lead to variability in quality.
 
 
 ## Motivation
-During my co-op, I built a gauge to verify correct Belleville washer assembly orientation. This made me think — can computer vision automate such inspection tasks?
 
-This project is my first step toward applying AI in manufacturing environments.
+During my manufacturing co-op, I designed a gauge to verify correct Belleville washer assembly orientation.
 
+This made me think:
+
+👉 Can computer vision automate such inspection tasks?
+
+This project is my first step toward building AI-driven inspection systems for manufacturing.
 
 
 ## What this project does
@@ -27,15 +36,34 @@ This project is my first step toward applying AI in manufacturing environments.
 - YOLOv8 (Ultralytics)  
 - PyTorch  
 - OpenCV  
-- Google Colab (GPU training)  
+- Google Colab (GPU training)
 
+
+## ⚙️ How It Works
+
+1. Convert dataset annotations (XML → YOLO format)
+2. Train YOLOv8 model on NEU-DET dataset
+3. Run inference on validation images
+4. Generate bounding boxes with confidence scores
+5. Save annotated outputs
+
+
+## Pipeline
+
+Image → Preprocessing → YOLOv8 Training → Inference → Defect Detection Output
 
 ## Results
-- Precision: **0.706**  
-- Recall: **0.692**  
-- mAP@50: **0.748**  
-- mAP@50-95: **0.396**
 
+- Precision: 0.706  
+- Recall: 0.692  
+- mAP@50: 0.748  
+- mAP@50-95: 0.396  
+
+Model successfully detected multiple defect types including:
+- crazing  
+- inclusion  
+- patches  
+- pitted surface  
 
 
 ## Sample Outputs
